@@ -7,8 +7,6 @@ updated, see [Usage](#usage) for more information.
 
 ## Install
 
-> **Warning:** The library is not actually published yet, it could still be imported with Jitpack though (i think).
-
 `minestom-ce-extensions` is published on maven central, and can be imported like the following:
 ```groovy
 repositories {
