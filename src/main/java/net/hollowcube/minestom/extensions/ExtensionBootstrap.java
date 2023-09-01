@@ -25,6 +25,7 @@ public final class ExtensionBootstrap {
     private ExtensionBootstrap(@NotNull MinecraftServer server) {
         this.server = server;
         extensions = new ExtensionManager(MinecraftServer.process());
+        MinecraftServer.getSchedulerManager().buildShutdownTask(extensions::shutdown);
 
         extensions.start();
         extensions.gotoPreInit();
