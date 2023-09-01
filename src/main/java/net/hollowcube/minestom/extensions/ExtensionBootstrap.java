@@ -40,4 +40,8 @@ public final class ExtensionBootstrap {
         extensions.gotoPostInit();
     }
 
+    public void shutdown() {
+        extensions.shutdown();
+    }
+
 }
